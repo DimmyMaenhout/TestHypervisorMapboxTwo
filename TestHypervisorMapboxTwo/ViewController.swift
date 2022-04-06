@@ -67,9 +67,8 @@ class ViewController: UIViewController {
             navigationMapView.navigationMapViewDelegate = self
             navigationMapView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     
-            navigationMapView.showsUserLocation = true
-            navigationMapView.tracksUserCourse = true
-//            navigationMapView.routeLineTracksTraversal = true
+            navigationMapView.showsUserLocation = false
+            self.navigationMapView.tracksUserCourse = false
     
             view.addSubview(navigationMapView)
         }
@@ -101,11 +100,6 @@ class ViewController: UIViewController {
             guard let routeShape: LineString = route.shape else {
                 print("route shape is nil")
                 return
-            }
-            
-            
-            DispatchQueue.main.async {
-                self.navigationMapView.showcase([route])
             }
             
             let coordinates = [origin, destination]
@@ -149,28 +143,35 @@ class ViewController: UIViewController {
             self.navService = navService
             self.navService?.delegate = self
             
-            self.voiceController = RouteVoiceController(navigationService: navService)
+//            self.voiceController = RouteVoiceController(navigationService: navService)
                         
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//                self.navService?.start()
-//
-//                self.navigationMapView.updateCourseTracking(location: CLLocation(latitude: origin.latitude, longitude: origin.longitude))
-//                guard
-//                    let firstInstruction = self.navService?.routeProgress.currentLegProgress.currentStepProgress.currentVisualInstruction,
-//                    let navService = self.navService else {
-//                        self.voiceController = nil
-//                        return
-//                    }
-//
-//                self.navigationService(navService, didPassVisualInstructionPoint: firstInstruction, routeProgress: navService.routeProgress)
-//            }
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                let navigationOptions = NavigationOptions(navigationService: navService, voiceController: self.voiceController)
-                let viewController = NavigationViewController(for: route, routeOptions: routeOptions, navigationOptions: navigationOptions)
-                viewController.modalPresentationStyle = .fullScreen
-                self.present(viewController, animated: true, completion: nil)
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                
+                self.navigationMapView.userTrackingMode = .followWithHeading
+                self.navigationMapView.tracksUserCourse = true
+                
+                self.navService?.start()
+                
+                self.navigationMapView.showcase([route])
+                
+                self.navigationMapView.updateCourseTracking(location: CLLocation(latitude: origin.latitude, longitude: origin.longitude))
+                guard
+                    let firstInstruction = self.navService?.routeProgress.currentLegProgress.currentStepProgress.currentVisualInstruction,
+                    let navService = self.navService else {
+                        self.voiceController = nil
+                        return
+                    }
+
+                self.navigationService(navService, didPassVisualInstructionPoint: firstInstruction, routeProgress: navService.routeProgress)
             }
+            
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+//                let navigationOptions = NavigationOptions(navigationService: navService, voiceController: self.voiceController)
+//                let viewController = NavigationViewController(for: route, routeOptions: routeOptions, navigationOptions: navigationOptions)
+//                viewController.modalPresentationStyle = .fullScreen
+//                self.present(viewController, animated: true, completion: nil)
+//            }
         }
     }
 }
