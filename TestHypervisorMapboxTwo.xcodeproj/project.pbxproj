@@ -103,6 +103,7 @@
 		630D9DBF27FD95E700B86C15 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DBE27FD95E700B86C15 /* Settings.swift */; };
 		630D9DC227FD961D00B86C15 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DC127FD961D00B86C15 /* UserDefault.swift */; };
 		630D9DC427FD983800B86C15 /* HypervisorWebSocketBaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DC327FD983800B86C15 /* HypervisorWebSocketBaseURL.swift */; };
+		632D932327FD9F8900AA3AB6 /* HypervisorNavigationModuleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D932227FD9F8900AA3AB6 /* HypervisorNavigationModuleConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -205,6 +206,7 @@
 		630D9DBE27FD95E700B86C15 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		630D9DC127FD961D00B86C15 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		630D9DC327FD983800B86C15 /* HypervisorWebSocketBaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypervisorWebSocketBaseURL.swift; sourceTree = "<group>"; };
+		632D932227FD9F8900AA3AB6 /* HypervisorNavigationModuleConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypervisorNavigationModuleConfig.swift; sourceTree = "<group>"; };
 		9D3B213837222C51D3326663 /* Pods-TestHypervisorMapboxTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestHypervisorMapboxTwo.debug.xcconfig"; path = "Target Support Files/Pods-TestHypervisorMapboxTwo/Pods-TestHypervisorMapboxTwo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -259,10 +261,11 @@
 				630D9CF627FD8E6400B86C15 /* Hypervisor */,
 				630D9D8227FD8FDE00B86C15 /* HypervisorConverter */,
 				630D9D9A27FD90DE00B86C15 /* HypervisorCore */,
-				630D9DB727FD92CC00B86C15 /* Shared */,
-				630D9DBE27FD95E700B86C15 /* Settings.swift */,
-				630D9DC127FD961D00B86C15 /* UserDefault.swift */,
 				630D9DC327FD983800B86C15 /* HypervisorWebSocketBaseURL.swift */,
+				630D9DBE27FD95E700B86C15 /* Settings.swift */,
+				630D9DB727FD92CC00B86C15 /* Shared */,
+				630D9DC127FD961D00B86C15 /* UserDefault.swift */,
+				632D932227FD9F8900AA3AB6 /* HypervisorNavigationModuleConfig.swift */,
 			);
 			path = "Hypervisor module";
 			sourceTree = "<group>";
@@ -647,6 +650,7 @@
 				630D9D7F27FD8FD700B86C15 /* CommandStates.swift in Sources */,
 				630D9DB227FD92A600B86C15 /* TransferType.swift in Sources */,
 				630D9DB127FD92A600B86C15 /* PublicTransportInfo.swift in Sources */,
+				632D932327FD9F8900AA3AB6 /* HypervisorNavigationModuleConfig.swift in Sources */,
 				630D9DC427FD983800B86C15 /* HypervisorWebSocketBaseURL.swift in Sources */,
 				630D9D4B27FD8F5400B86C15 /* DeviatedResponseMessage.swift in Sources */,
 				630D9D4627FD8F5400B86C15 /* InfeasibleResponseMessage.swift in Sources */,
