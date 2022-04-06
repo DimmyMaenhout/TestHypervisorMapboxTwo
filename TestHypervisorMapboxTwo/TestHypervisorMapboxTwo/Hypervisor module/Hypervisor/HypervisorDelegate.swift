@@ -5,7 +5,7 @@
 //  Created by Maarten Zonneveld on 23/02/2021.
 //
 
-import HypervisorCore
+//import HypervisorCore
 import CoreLocation.CLLocation
 
 /// Listener to communicate events from hypervisor, this must be implemented to make hypervisor work with your app.

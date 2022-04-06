@@ -5,8 +5,8 @@
 //  Created by Marcel Hozeman on 09/02/2021.
 //
 
-import HypervisorCore
-
+//import HypervisorCore
+import Foundation 
 /// Hypervisor options
 public struct HypervisorOptions {
     

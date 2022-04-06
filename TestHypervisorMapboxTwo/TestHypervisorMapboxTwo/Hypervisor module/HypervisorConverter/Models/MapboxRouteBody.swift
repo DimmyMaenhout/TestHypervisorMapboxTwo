@@ -5,7 +5,7 @@
 //  Created by Maarten Zonneveld on 05/02/2021.
 //
 
-import HypervisorCore
+//import HypervisorCore
 
 /// Mapbox body object for the post call towards the conversion api.
 public struct MapboxRouteBody: Encodable {

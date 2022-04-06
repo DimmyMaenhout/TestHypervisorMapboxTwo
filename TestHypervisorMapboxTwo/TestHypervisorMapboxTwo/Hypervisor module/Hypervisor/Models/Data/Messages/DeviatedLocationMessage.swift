@@ -5,7 +5,7 @@
 //  Created by Marcel Hozeman on 09/02/2021.
 //
 
-import HypervisorCore
+//import HypervisorCore
 
 /// Location message to sent the location to the websocket
 class DeviatedLocationMessage: BaseLocationMessage {

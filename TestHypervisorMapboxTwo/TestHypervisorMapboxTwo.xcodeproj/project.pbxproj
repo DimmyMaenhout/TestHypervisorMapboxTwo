@@ -3,19 +3,111 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		575E109D20AEE99A1493B550 /* Pods_TestHypervisorMapboxTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F04CEB6207DA1A24118FCA /* Pods_TestHypervisorMapboxTwo.framework */; };
 		630D9CE227FD8E1700B86C15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9CE127FD8E1700B86C15 /* AppDelegate.swift */; };
 		630D9CE427FD8E1700B86C15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9CE327FD8E1700B86C15 /* SceneDelegate.swift */; };
 		630D9CE627FD8E1700B86C15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9CE527FD8E1700B86C15 /* ViewController.swift */; };
 		630D9CE927FD8E1700B86C15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630D9CE727FD8E1700B86C15 /* Main.storyboard */; };
 		630D9CEB27FD8E1800B86C15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630D9CEA27FD8E1800B86C15 /* Assets.xcassets */; };
 		630D9CEE27FD8E1800B86C15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630D9CEC27FD8E1800B86C15 /* LaunchScreen.storyboard */; };
+		630D9CF927FD8EBC00B86C15 /* HypervisorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9CF727FD8EBC00B86C15 /* HypervisorDelegate.swift */; };
+		630D9CFA27FD8EBC00B86C15 /* HypervisorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9CF827FD8EBC00B86C15 /* HypervisorController.swift */; };
+		630D9CFD27FD8ED000B86C15 /* HypervisorSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9CFC27FD8ED000B86C15 /* HypervisorSocketManager.swift */; };
+		630D9D0027FD8EE800B86C15 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9CFF27FD8EE800B86C15 /* CGPoint+Extensions.swift */; };
+		630D9D0C27FD8F1700B86C15 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D0327FD8F1700B86C15 /* Delay.swift */; };
+		630D9D0D27FD8F1700B86C15 /* PublicTransportProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D0427FD8F1700B86C15 /* PublicTransportProgress.swift */; };
+		630D9D0E27FD8F1700B86C15 /* HypervisorOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D0527FD8F1700B86C15 /* HypervisorOptions.swift */; };
+		630D9D0F27FD8F1700B86C15 /* PluginConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D0627FD8F1700B86C15 /* PluginConfig.swift */; };
+		630D9D1027FD8F1700B86C15 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D0727FD8F1700B86C15 /* Error.swift */; };
+		630D9D1127FD8F1700B86C15 /* PublicTransportNotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D0827FD8F1700B86C15 /* PublicTransportNotificationInfo.swift */; };
+		630D9D1227FD8F1700B86C15 /* PublicTransportStopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D0927FD8F1700B86C15 /* PublicTransportStopInfo.swift */; };
+		630D9D1327FD8F1700B86C15 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D0A27FD8F1700B86C15 /* Trip.swift */; };
+		630D9D1427FD8F1700B86C15 /* Alternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D0B27FD8F1700B86C15 /* Alternative.swift */; };
+		630D9D2227FD8F3100B86C15 /* AlterRouteCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D1627FD8F3000B86C15 /* AlterRouteCommand.swift */; };
+		630D9D2327FD8F3100B86C15 /* StartPartInteractionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D1727FD8F3000B86C15 /* StartPartInteractionCommand.swift */; };
+		630D9D2427FD8F3100B86C15 /* InitInteractionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D1827FD8F3000B86C15 /* InitInteractionCommand.swift */; };
+		630D9D2527FD8F3100B86C15 /* BaseCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D1927FD8F3000B86C15 /* BaseCommand.swift */; };
+		630D9D2627FD8F3100B86C15 /* StartInteractionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D1A27FD8F3000B86C15 /* StartInteractionCommand.swift */; };
+		630D9D2727FD8F3100B86C15 /* ConnectCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D1B27FD8F3000B86C15 /* ConnectCommand.swift */; };
+		630D9D2827FD8F3100B86C15 /* StopInteractionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D1C27FD8F3000B86C15 /* StopInteractionCommand.swift */; };
+		630D9D2927FD8F3100B86C15 /* BaseInteractionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D1D27FD8F3000B86C15 /* BaseInteractionCommand.swift */; };
+		630D9D2A27FD8F3100B86C15 /* StartTransferInteractionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D1E27FD8F3000B86C15 /* StartTransferInteractionCommand.swift */; };
+		630D9D2B27FD8F3100B86C15 /* UpdateLocationInteractionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D1F27FD8F3000B86C15 /* UpdateLocationInteractionCommand.swift */; };
+		630D9D2C27FD8F3100B86C15 /* DeviationInteractionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D2027FD8F3100B86C15 /* DeviationInteractionCommand.swift */; };
+		630D9D2D27FD8F3100B86C15 /* ReconnectCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D2127FD8F3100B86C15 /* ReconnectCommand.swift */; };
+		630D9D4027FD8F5400B86C15 /* RouteInfoMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D2F27FD8F5300B86C15 /* RouteInfoMessage.swift */; };
+		630D9D4127FD8F5400B86C15 /* DepartureDelayResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3027FD8F5300B86C15 /* DepartureDelayResponseMessage.swift */; };
+		630D9D4227FD8F5400B86C15 /* ResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3127FD8F5300B86C15 /* ResponseMessage.swift */; };
+		630D9D4327FD8F5400B86C15 /* RouteArrivalDelayResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3227FD8F5300B86C15 /* RouteArrivalDelayResponseMessage.swift */; };
+		630D9D4427FD8F5400B86C15 /* LocationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3327FD8F5300B86C15 /* LocationMessage.swift */; };
+		630D9D4527FD8F5400B86C15 /* AlternativeRouteMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3427FD8F5300B86C15 /* AlternativeRouteMessage.swift */; };
+		630D9D4627FD8F5400B86C15 /* InfeasibleResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3527FD8F5300B86C15 /* InfeasibleResponseMessage.swift */; };
+		630D9D4727FD8F5400B86C15 /* CancellationResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3627FD8F5300B86C15 /* CancellationResponseMessage.swift */; };
+		630D9D4827FD8F5400B86C15 /* TransferUpdateMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3727FD8F5300B86C15 /* TransferUpdateMessage.swift */; };
+		630D9D4927FD8F5400B86C15 /* BaseLocationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3827FD8F5300B86C15 /* BaseLocationMessage.swift */; };
+		630D9D4A27FD8F5400B86C15 /* ArrivalDelayResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3927FD8F5300B86C15 /* ArrivalDelayResponseMessage.swift */; };
+		630D9D4B27FD8F5400B86C15 /* DeviatedResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3A27FD8F5300B86C15 /* DeviatedResponseMessage.swift */; };
+		630D9D4C27FD8F5400B86C15 /* BaseResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3B27FD8F5300B86C15 /* BaseResponseMessage.swift */; };
+		630D9D4D27FD8F5400B86C15 /* PartUpdateMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3C27FD8F5300B86C15 /* PartUpdateMessage.swift */; };
+		630D9D4E27FD8F5400B86C15 /* DeviatedLocationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3D27FD8F5300B86C15 /* DeviatedLocationMessage.swift */; };
+		630D9D4F27FD8F5400B86C15 /* TransferUpdateResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3E27FD8F5300B86C15 /* TransferUpdateResponseMessage.swift */; };
+		630D9D5027FD8F5400B86C15 /* ETAResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D3F27FD8F5300B86C15 /* ETAResponseMessage.swift */; };
+		630D9D5E27FD8F7C00B86C15 /* InfeasibleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D5227FD8F7B00B86C15 /* InfeasibleResponse.swift */; };
+		630D9D5F27FD8F7C00B86C15 /* ConnectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D5327FD8F7B00B86C15 /* ConnectResponse.swift */; };
+		630D9D6027FD8F7C00B86C15 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D5427FD8F7B00B86C15 /* BaseResponse.swift */; };
+		630D9D6127FD8F7C00B86C15 /* DepartureDelayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D5527FD8F7B00B86C15 /* DepartureDelayResponse.swift */; };
+		630D9D6227FD8F7C00B86C15 /* DeviationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D5627FD8F7B00B86C15 /* DeviationResponse.swift */; };
+		630D9D6327FD8F7C00B86C15 /* ETAResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D5727FD8F7B00B86C15 /* ETAResponse.swift */; };
+		630D9D6427FD8F7C00B86C15 /* CancellationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D5827FD8F7B00B86C15 /* CancellationResponse.swift */; };
+		630D9D6527FD8F7C00B86C15 /* AlternativesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D5927FD8F7B00B86C15 /* AlternativesResponse.swift */; };
+		630D9D6627FD8F7C00B86C15 /* ArrivalDelayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D5A27FD8F7B00B86C15 /* ArrivalDelayResponse.swift */; };
+		630D9D6727FD8F7C00B86C15 /* PublicTransportProgressResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D5B27FD8F7B00B86C15 /* PublicTransportProgressResponse.swift */; };
+		630D9D6827FD8F7C00B86C15 /* TransferUpdateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D5C27FD8F7C00B86C15 /* TransferUpdateResponse.swift */; };
+		630D9D6927FD8F7C00B86C15 /* RouteArrivalDelayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D5D27FD8F7C00B86C15 /* RouteArrivalDelayResponse.swift */; };
+		630D9D6E27FD8F9500B86C15 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D6B27FD8F9500B86C15 /* Update.swift */; };
+		630D9D6F27FD8F9500B86C15 /* TransferUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D6C27FD8F9500B86C15 /* TransferUpdate.swift */; };
+		630D9D7027FD8F9500B86C15 /* BaseUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D6D27FD8F9500B86C15 /* BaseUpdate.swift */; };
+		630D9D7A27FD8FD700B86C15 /* InfeasibilityReasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D7227FD8FD600B86C15 /* InfeasibilityReasons.swift */; };
+		630D9D7B27FD8FD700B86C15 /* ZoneRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D7327FD8FD600B86C15 /* ZoneRadius.swift */; };
+		630D9D7C27FD8FD700B86C15 /* HypervisorWebSocketEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D7427FD8FD600B86C15 /* HypervisorWebSocketEnvironment.swift */; };
+		630D9D7D27FD8FD700B86C15 /* MessageTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D7527FD8FD600B86C15 /* MessageTypes.swift */; };
+		630D9D7E27FD8FD700B86C15 /* EventTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D7627FD8FD700B86C15 /* EventTypes.swift */; };
+		630D9D7F27FD8FD700B86C15 /* CommandStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D7727FD8FD700B86C15 /* CommandStates.swift */; };
+		630D9D8027FD8FD700B86C15 /* PublicTransportStopTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D7827FD8FD700B86C15 /* PublicTransportStopTypes.swift */; };
+		630D9D8127FD8FD700B86C15 /* DelayTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D7927FD8FD700B86C15 /* DelayTypes.swift */; };
+		630D9D9127FD906D00B86C15 /* GeometryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D8E27FD906D00B86C15 /* GeometryType.swift */; };
+		630D9D9227FD906D00B86C15 /* MapboxConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D8F27FD906D00B86C15 /* MapboxConfig.swift */; };
+		630D9D9327FD906D00B86C15 /* MapboxRouteBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D9027FD906D00B86C15 /* MapboxRouteBody.swift */; };
+		630D9D9527FD907C00B86C15 /* HypervisorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D9427FD907C00B86C15 /* HypervisorConverter.swift */; };
+		630D9D9727FD909E00B86C15 /* TransferType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D9627FD909E00B86C15 /* TransferType+Extensions.swift */; };
+		630D9D9927FD90B800B86C15 /* RouteConverterApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D9827FD90B800B86C15 /* RouteConverterApiService.swift */; };
+		630D9D9D27FD926400B86C15 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D9C27FD926400B86C15 /* URLRequest+Extensions.swift */; };
+		630D9D9F27FD927300B86C15 /* HypervisorCoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9D9E27FD927300B86C15 /* HypervisorCoreController.swift */; };
+		630D9DA227FD928A00B86C15 /* HypervisorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DA127FD928A00B86C15 /* HypervisorLogger.swift */; };
+		630D9DAC27FD92A600B86C15 /* HypervisorSharedMobilityAgency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DA427FD92A600B86C15 /* HypervisorSharedMobilityAgency.swift */; };
+		630D9DAD27FD92A600B86C15 /* SharedMobilityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DA527FD92A600B86C15 /* SharedMobilityInfo.swift */; };
+		630D9DAE27FD92A600B86C15 /* HypervisorRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DA627FD92A600B86C15 /* HypervisorRoute.swift */; };
+		630D9DAF27FD92A600B86C15 /* RoutePart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DA727FD92A600B86C15 /* RoutePart.swift */; };
+		630D9DB027FD92A600B86C15 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DA827FD92A600B86C15 /* Location.swift */; };
+		630D9DB127FD92A600B86C15 /* PublicTransportInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DA927FD92A600B86C15 /* PublicTransportInfo.swift */; };
+		630D9DB227FD92A600B86C15 /* TransferType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DAA27FD92A600B86C15 /* TransferType.swift */; };
+		630D9DB327FD92A600B86C15 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DAB27FD92A600B86C15 /* Stop.swift */; };
+		630D9DB627FD92C500B86C15 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DB527FD92C500B86C15 /* DateUtil.swift */; };
+		630D9DBB27FD92D800B86C15 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DB827FD92D800B86C15 /* Collection+Extensions.swift */; };
+		630D9DBC27FD92D800B86C15 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DB927FD92D800B86C15 /* Optional+Extensions.swift */; };
+		630D9DBD27FD92D800B86C15 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DBA27FD92D800B86C15 /* String+Extensions.swift */; };
+		630D9DBF27FD95E700B86C15 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DBE27FD95E700B86C15 /* Settings.swift */; };
+		630D9DC227FD961D00B86C15 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DC127FD961D00B86C15 /* UserDefault.swift */; };
+		630D9DC427FD983800B86C15 /* HypervisorWebSocketBaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DC327FD983800B86C15 /* HypervisorWebSocketBaseURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02F04CEB6207DA1A24118FCA /* Pods_TestHypervisorMapboxTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestHypervisorMapboxTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		257DCD3ED8620EE66516DFDD /* Pods-TestHypervisorMapboxTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestHypervisorMapboxTwo.release.xcconfig"; path = "Target Support Files/Pods-TestHypervisorMapboxTwo/Pods-TestHypervisorMapboxTwo.release.xcconfig"; sourceTree = "<group>"; };
 		630D9CDE27FD8E1700B86C15 /* TestHypervisorMapboxTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestHypervisorMapboxTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		630D9CE127FD8E1700B86C15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		630D9CE327FD8E1700B86C15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +116,96 @@
 		630D9CEA27FD8E1800B86C15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		630D9CED27FD8E1800B86C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		630D9CEF27FD8E1800B86C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630D9CF727FD8EBC00B86C15 /* HypervisorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypervisorDelegate.swift; sourceTree = "<group>"; };
+		630D9CF827FD8EBC00B86C15 /* HypervisorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypervisorController.swift; sourceTree = "<group>"; };
+		630D9CFC27FD8ED000B86C15 /* HypervisorSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypervisorSocketManager.swift; sourceTree = "<group>"; };
+		630D9CFF27FD8EE800B86C15 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		630D9D0327FD8F1700B86C15 /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
+		630D9D0427FD8F1700B86C15 /* PublicTransportProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicTransportProgress.swift; sourceTree = "<group>"; };
+		630D9D0527FD8F1700B86C15 /* HypervisorOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypervisorOptions.swift; sourceTree = "<group>"; };
+		630D9D0627FD8F1700B86C15 /* PluginConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginConfig.swift; sourceTree = "<group>"; };
+		630D9D0727FD8F1700B86C15 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		630D9D0827FD8F1700B86C15 /* PublicTransportNotificationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicTransportNotificationInfo.swift; sourceTree = "<group>"; };
+		630D9D0927FD8F1700B86C15 /* PublicTransportStopInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicTransportStopInfo.swift; sourceTree = "<group>"; };
+		630D9D0A27FD8F1700B86C15 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		630D9D0B27FD8F1700B86C15 /* Alternative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alternative.swift; sourceTree = "<group>"; };
+		630D9D1627FD8F3000B86C15 /* AlterRouteCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlterRouteCommand.swift; sourceTree = "<group>"; };
+		630D9D1727FD8F3000B86C15 /* StartPartInteractionCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPartInteractionCommand.swift; sourceTree = "<group>"; };
+		630D9D1827FD8F3000B86C15 /* InitInteractionCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitInteractionCommand.swift; sourceTree = "<group>"; };
+		630D9D1927FD8F3000B86C15 /* BaseCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCommand.swift; sourceTree = "<group>"; };
+		630D9D1A27FD8F3000B86C15 /* StartInteractionCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartInteractionCommand.swift; sourceTree = "<group>"; };
+		630D9D1B27FD8F3000B86C15 /* ConnectCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectCommand.swift; sourceTree = "<group>"; };
+		630D9D1C27FD8F3000B86C15 /* StopInteractionCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopInteractionCommand.swift; sourceTree = "<group>"; };
+		630D9D1D27FD8F3000B86C15 /* BaseInteractionCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInteractionCommand.swift; sourceTree = "<group>"; };
+		630D9D1E27FD8F3000B86C15 /* StartTransferInteractionCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartTransferInteractionCommand.swift; sourceTree = "<group>"; };
+		630D9D1F27FD8F3000B86C15 /* UpdateLocationInteractionCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateLocationInteractionCommand.swift; sourceTree = "<group>"; };
+		630D9D2027FD8F3100B86C15 /* DeviationInteractionCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviationInteractionCommand.swift; sourceTree = "<group>"; };
+		630D9D2127FD8F3100B86C15 /* ReconnectCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReconnectCommand.swift; sourceTree = "<group>"; };
+		630D9D2F27FD8F5300B86C15 /* RouteInfoMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteInfoMessage.swift; sourceTree = "<group>"; };
+		630D9D3027FD8F5300B86C15 /* DepartureDelayResponseMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureDelayResponseMessage.swift; sourceTree = "<group>"; };
+		630D9D3127FD8F5300B86C15 /* ResponseMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMessage.swift; sourceTree = "<group>"; };
+		630D9D3227FD8F5300B86C15 /* RouteArrivalDelayResponseMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteArrivalDelayResponseMessage.swift; sourceTree = "<group>"; };
+		630D9D3327FD8F5300B86C15 /* LocationMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMessage.swift; sourceTree = "<group>"; };
+		630D9D3427FD8F5300B86C15 /* AlternativeRouteMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlternativeRouteMessage.swift; sourceTree = "<group>"; };
+		630D9D3527FD8F5300B86C15 /* InfeasibleResponseMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfeasibleResponseMessage.swift; sourceTree = "<group>"; };
+		630D9D3627FD8F5300B86C15 /* CancellationResponseMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancellationResponseMessage.swift; sourceTree = "<group>"; };
+		630D9D3727FD8F5300B86C15 /* TransferUpdateMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferUpdateMessage.swift; sourceTree = "<group>"; };
+		630D9D3827FD8F5300B86C15 /* BaseLocationMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLocationMessage.swift; sourceTree = "<group>"; };
+		630D9D3927FD8F5300B86C15 /* ArrivalDelayResponseMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalDelayResponseMessage.swift; sourceTree = "<group>"; };
+		630D9D3A27FD8F5300B86C15 /* DeviatedResponseMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviatedResponseMessage.swift; sourceTree = "<group>"; };
+		630D9D3B27FD8F5300B86C15 /* BaseResponseMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponseMessage.swift; sourceTree = "<group>"; };
+		630D9D3C27FD8F5300B86C15 /* PartUpdateMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartUpdateMessage.swift; sourceTree = "<group>"; };
+		630D9D3D27FD8F5300B86C15 /* DeviatedLocationMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviatedLocationMessage.swift; sourceTree = "<group>"; };
+		630D9D3E27FD8F5300B86C15 /* TransferUpdateResponseMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferUpdateResponseMessage.swift; sourceTree = "<group>"; };
+		630D9D3F27FD8F5300B86C15 /* ETAResponseMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETAResponseMessage.swift; sourceTree = "<group>"; };
+		630D9D5227FD8F7B00B86C15 /* InfeasibleResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfeasibleResponse.swift; sourceTree = "<group>"; };
+		630D9D5327FD8F7B00B86C15 /* ConnectResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectResponse.swift; sourceTree = "<group>"; };
+		630D9D5427FD8F7B00B86C15 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		630D9D5527FD8F7B00B86C15 /* DepartureDelayResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureDelayResponse.swift; sourceTree = "<group>"; };
+		630D9D5627FD8F7B00B86C15 /* DeviationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviationResponse.swift; sourceTree = "<group>"; };
+		630D9D5727FD8F7B00B86C15 /* ETAResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETAResponse.swift; sourceTree = "<group>"; };
+		630D9D5827FD8F7B00B86C15 /* CancellationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancellationResponse.swift; sourceTree = "<group>"; };
+		630D9D5927FD8F7B00B86C15 /* AlternativesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlternativesResponse.swift; sourceTree = "<group>"; };
+		630D9D5A27FD8F7B00B86C15 /* ArrivalDelayResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalDelayResponse.swift; sourceTree = "<group>"; };
+		630D9D5B27FD8F7B00B86C15 /* PublicTransportProgressResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicTransportProgressResponse.swift; sourceTree = "<group>"; };
+		630D9D5C27FD8F7C00B86C15 /* TransferUpdateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferUpdateResponse.swift; sourceTree = "<group>"; };
+		630D9D5D27FD8F7C00B86C15 /* RouteArrivalDelayResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteArrivalDelayResponse.swift; sourceTree = "<group>"; };
+		630D9D6B27FD8F9500B86C15 /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		630D9D6C27FD8F9500B86C15 /* TransferUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferUpdate.swift; sourceTree = "<group>"; };
+		630D9D6D27FD8F9500B86C15 /* BaseUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUpdate.swift; sourceTree = "<group>"; };
+		630D9D7227FD8FD600B86C15 /* InfeasibilityReasons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfeasibilityReasons.swift; sourceTree = "<group>"; };
+		630D9D7327FD8FD600B86C15 /* ZoneRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoneRadius.swift; sourceTree = "<group>"; };
+		630D9D7427FD8FD600B86C15 /* HypervisorWebSocketEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypervisorWebSocketEnvironment.swift; sourceTree = "<group>"; };
+		630D9D7527FD8FD600B86C15 /* MessageTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTypes.swift; sourceTree = "<group>"; };
+		630D9D7627FD8FD700B86C15 /* EventTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTypes.swift; sourceTree = "<group>"; };
+		630D9D7727FD8FD700B86C15 /* CommandStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandStates.swift; sourceTree = "<group>"; };
+		630D9D7827FD8FD700B86C15 /* PublicTransportStopTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicTransportStopTypes.swift; sourceTree = "<group>"; };
+		630D9D7927FD8FD700B86C15 /* DelayTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayTypes.swift; sourceTree = "<group>"; };
+		630D9D8E27FD906D00B86C15 /* GeometryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometryType.swift; sourceTree = "<group>"; };
+		630D9D8F27FD906D00B86C15 /* MapboxConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxConfig.swift; sourceTree = "<group>"; };
+		630D9D9027FD906D00B86C15 /* MapboxRouteBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxRouteBody.swift; sourceTree = "<group>"; };
+		630D9D9427FD907C00B86C15 /* HypervisorConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypervisorConverter.swift; sourceTree = "<group>"; };
+		630D9D9627FD909E00B86C15 /* TransferType+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransferType+Extensions.swift"; sourceTree = "<group>"; };
+		630D9D9827FD90B800B86C15 /* RouteConverterApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteConverterApiService.swift; sourceTree = "<group>"; };
+		630D9D9C27FD926400B86C15 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		630D9D9E27FD927300B86C15 /* HypervisorCoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypervisorCoreController.swift; sourceTree = "<group>"; };
+		630D9DA127FD928A00B86C15 /* HypervisorLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypervisorLogger.swift; sourceTree = "<group>"; };
+		630D9DA427FD92A600B86C15 /* HypervisorSharedMobilityAgency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypervisorSharedMobilityAgency.swift; sourceTree = "<group>"; };
+		630D9DA527FD92A600B86C15 /* SharedMobilityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedMobilityInfo.swift; sourceTree = "<group>"; };
+		630D9DA627FD92A600B86C15 /* HypervisorRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypervisorRoute.swift; sourceTree = "<group>"; };
+		630D9DA727FD92A600B86C15 /* RoutePart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePart.swift; sourceTree = "<group>"; };
+		630D9DA827FD92A600B86C15 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		630D9DA927FD92A600B86C15 /* PublicTransportInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicTransportInfo.swift; sourceTree = "<group>"; };
+		630D9DAA27FD92A600B86C15 /* TransferType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferType.swift; sourceTree = "<group>"; };
+		630D9DAB27FD92A600B86C15 /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		630D9DB527FD92C500B86C15 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		630D9DB827FD92D800B86C15 /* Collection+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		630D9DB927FD92D800B86C15 /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
+		630D9DBA27FD92D800B86C15 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		630D9DBE27FD95E700B86C15 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		630D9DC127FD961D00B86C15 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		630D9DC327FD983800B86C15 /* HypervisorWebSocketBaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypervisorWebSocketBaseURL.swift; sourceTree = "<group>"; };
+		9D3B213837222C51D3326663 /* Pods-TestHypervisorMapboxTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestHypervisorMapboxTwo.debug.xcconfig"; path = "Target Support Files/Pods-TestHypervisorMapboxTwo/Pods-TestHypervisorMapboxTwo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575E109D20AEE99A1493B550 /* Pods_TestHypervisorMapboxTwo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +225,8 @@
 			children = (
 				630D9CE027FD8E1700B86C15 /* TestHypervisorMapboxTwo */,
 				630D9CDF27FD8E1700B86C15 /* Products */,
+				655A747D3FE50BF628830C29 /* Pods */,
+				E2DC3ABBA249202014E8574A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +241,7 @@
 		630D9CE027FD8E1700B86C15 /* TestHypervisorMapboxTwo */ = {
 			isa = PBXGroup;
 			children = (
+				630D9CF527FD8E4100B86C15 /* Hypervisor module */,
 				630D9CE127FD8E1700B86C15 /* AppDelegate.swift */,
 				630D9CE327FD8E1700B86C15 /* SceneDelegate.swift */,
 				630D9CE527FD8E1700B86C15 /* ViewController.swift */,
@@ -67,6 +253,279 @@
 			path = TestHypervisorMapboxTwo;
 			sourceTree = "<group>";
 		};
+		630D9CF527FD8E4100B86C15 /* Hypervisor module */ = {
+			isa = PBXGroup;
+			children = (
+				630D9CF627FD8E6400B86C15 /* Hypervisor */,
+				630D9D8227FD8FDE00B86C15 /* HypervisorConverter */,
+				630D9D9A27FD90DE00B86C15 /* HypervisorCore */,
+				630D9DB727FD92CC00B86C15 /* Shared */,
+				630D9DBE27FD95E700B86C15 /* Settings.swift */,
+				630D9DC127FD961D00B86C15 /* UserDefault.swift */,
+				630D9DC327FD983800B86C15 /* HypervisorWebSocketBaseURL.swift */,
+			);
+			path = "Hypervisor module";
+			sourceTree = "<group>";
+		};
+		630D9CF627FD8E6400B86C15 /* Hypervisor */ = {
+			isa = PBXGroup;
+			children = (
+				630D9D0127FD8EF400B86C15 /* Models */,
+				630D9CFE27FD8ED800B86C15 /* Extensions */,
+				630D9CFB27FD8EC100B86C15 /* Controllers */,
+				630D9CF827FD8EBC00B86C15 /* HypervisorController.swift */,
+				630D9CF727FD8EBC00B86C15 /* HypervisorDelegate.swift */,
+			);
+			path = Hypervisor;
+			sourceTree = "<group>";
+		};
+		630D9CFB27FD8EC100B86C15 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				630D9CFC27FD8ED000B86C15 /* HypervisorSocketManager.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		630D9CFE27FD8ED800B86C15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				630D9CFF27FD8EE800B86C15 /* CGPoint+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		630D9D0127FD8EF400B86C15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				630D9D7127FD8FB700B86C15 /* Enums */,
+				630D9D0227FD8EFF00B86C15 /* Data */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		630D9D0227FD8EFF00B86C15 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				630D9D0B27FD8F1700B86C15 /* Alternative.swift */,
+				630D9D1527FD8F2200B86C15 /* Commands */,
+				630D9D0327FD8F1700B86C15 /* Delay.swift */,
+				630D9D0727FD8F1700B86C15 /* Error.swift */,
+				630D9D0527FD8F1700B86C15 /* HypervisorOptions.swift */,
+				630D9D2E27FD8F3D00B86C15 /* Messages */,
+				630D9D0627FD8F1700B86C15 /* PluginConfig.swift */,
+				630D9D0827FD8F1700B86C15 /* PublicTransportNotificationInfo.swift */,
+				630D9D0427FD8F1700B86C15 /* PublicTransportProgress.swift */,
+				630D9D0927FD8F1700B86C15 /* PublicTransportStopInfo.swift */,
+				630D9D5127FD8F6800B86C15 /* Responses */,
+				630D9D0A27FD8F1700B86C15 /* Trip.swift */,
+				630D9D6A27FD8F8700B86C15 /* Updates */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		630D9D1527FD8F2200B86C15 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				630D9D1627FD8F3000B86C15 /* AlterRouteCommand.swift */,
+				630D9D1927FD8F3000B86C15 /* BaseCommand.swift */,
+				630D9D1D27FD8F3000B86C15 /* BaseInteractionCommand.swift */,
+				630D9D1B27FD8F3000B86C15 /* ConnectCommand.swift */,
+				630D9D2027FD8F3100B86C15 /* DeviationInteractionCommand.swift */,
+				630D9D1827FD8F3000B86C15 /* InitInteractionCommand.swift */,
+				630D9D2127FD8F3100B86C15 /* ReconnectCommand.swift */,
+				630D9D1A27FD8F3000B86C15 /* StartInteractionCommand.swift */,
+				630D9D1727FD8F3000B86C15 /* StartPartInteractionCommand.swift */,
+				630D9D1E27FD8F3000B86C15 /* StartTransferInteractionCommand.swift */,
+				630D9D1C27FD8F3000B86C15 /* StopInteractionCommand.swift */,
+				630D9D1F27FD8F3000B86C15 /* UpdateLocationInteractionCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		630D9D2E27FD8F3D00B86C15 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				630D9D3427FD8F5300B86C15 /* AlternativeRouteMessage.swift */,
+				630D9D3927FD8F5300B86C15 /* ArrivalDelayResponseMessage.swift */,
+				630D9D3827FD8F5300B86C15 /* BaseLocationMessage.swift */,
+				630D9D3B27FD8F5300B86C15 /* BaseResponseMessage.swift */,
+				630D9D3627FD8F5300B86C15 /* CancellationResponseMessage.swift */,
+				630D9D3027FD8F5300B86C15 /* DepartureDelayResponseMessage.swift */,
+				630D9D3D27FD8F5300B86C15 /* DeviatedLocationMessage.swift */,
+				630D9D3A27FD8F5300B86C15 /* DeviatedResponseMessage.swift */,
+				630D9D3F27FD8F5300B86C15 /* ETAResponseMessage.swift */,
+				630D9D3527FD8F5300B86C15 /* InfeasibleResponseMessage.swift */,
+				630D9D3327FD8F5300B86C15 /* LocationMessage.swift */,
+				630D9D3C27FD8F5300B86C15 /* PartUpdateMessage.swift */,
+				630D9D3127FD8F5300B86C15 /* ResponseMessage.swift */,
+				630D9D3227FD8F5300B86C15 /* RouteArrivalDelayResponseMessage.swift */,
+				630D9D2F27FD8F5300B86C15 /* RouteInfoMessage.swift */,
+				630D9D3727FD8F5300B86C15 /* TransferUpdateMessage.swift */,
+				630D9D3E27FD8F5300B86C15 /* TransferUpdateResponseMessage.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		630D9D5127FD8F6800B86C15 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				630D9D5927FD8F7B00B86C15 /* AlternativesResponse.swift */,
+				630D9D5A27FD8F7B00B86C15 /* ArrivalDelayResponse.swift */,
+				630D9D5427FD8F7B00B86C15 /* BaseResponse.swift */,
+				630D9D5827FD8F7B00B86C15 /* CancellationResponse.swift */,
+				630D9D5327FD8F7B00B86C15 /* ConnectResponse.swift */,
+				630D9D5527FD8F7B00B86C15 /* DepartureDelayResponse.swift */,
+				630D9D5627FD8F7B00B86C15 /* DeviationResponse.swift */,
+				630D9D5727FD8F7B00B86C15 /* ETAResponse.swift */,
+				630D9D5227FD8F7B00B86C15 /* InfeasibleResponse.swift */,
+				630D9D5B27FD8F7B00B86C15 /* PublicTransportProgressResponse.swift */,
+				630D9D5D27FD8F7C00B86C15 /* RouteArrivalDelayResponse.swift */,
+				630D9D5C27FD8F7C00B86C15 /* TransferUpdateResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		630D9D6A27FD8F8700B86C15 /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				630D9D6D27FD8F9500B86C15 /* BaseUpdate.swift */,
+				630D9D6C27FD8F9500B86C15 /* TransferUpdate.swift */,
+				630D9D6B27FD8F9500B86C15 /* Update.swift */,
+			);
+			path = Updates;
+			sourceTree = "<group>";
+		};
+		630D9D7127FD8FB700B86C15 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				630D9D7727FD8FD700B86C15 /* CommandStates.swift */,
+				630D9D7927FD8FD700B86C15 /* DelayTypes.swift */,
+				630D9D7627FD8FD700B86C15 /* EventTypes.swift */,
+				630D9D7427FD8FD600B86C15 /* HypervisorWebSocketEnvironment.swift */,
+				630D9D7227FD8FD600B86C15 /* InfeasibilityReasons.swift */,
+				630D9D7527FD8FD600B86C15 /* MessageTypes.swift */,
+				630D9D7827FD8FD700B86C15 /* PublicTransportStopTypes.swift */,
+				630D9D7327FD8FD600B86C15 /* ZoneRadius.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		630D9D8227FD8FDE00B86C15 /* HypervisorConverter */ = {
+			isa = PBXGroup;
+			children = (
+				630D9D9427FD907C00B86C15 /* HypervisorConverter.swift */,
+				630D9D8D27FD902C00B86C15 /* Models */,
+				630D9D8627FD900500B86C15 /* Extensions */,
+				630D9D8327FD8FEE00B86C15 /* Controllers */,
+			);
+			path = HypervisorConverter;
+			sourceTree = "<group>";
+		};
+		630D9D8327FD8FEE00B86C15 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				630D9D9827FD90B800B86C15 /* RouteConverterApiService.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		630D9D8627FD900500B86C15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				630D9D9627FD909E00B86C15 /* TransferType+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		630D9D8D27FD902C00B86C15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				630D9D8E27FD906D00B86C15 /* GeometryType.swift */,
+				630D9D8F27FD906D00B86C15 /* MapboxConfig.swift */,
+				630D9D9027FD906D00B86C15 /* MapboxRouteBody.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		630D9D9A27FD90DE00B86C15 /* HypervisorCore */ = {
+			isa = PBXGroup;
+			children = (
+				630D9DB427FD92B100B86C15 /* Utils */,
+				630D9DA327FD929600B86C15 /* Models */,
+				630D9DA027FD927E00B86C15 /* Logger */,
+				630D9D9E27FD927300B86C15 /* HypervisorCoreController.swift */,
+				630D9D9B27FD90F400B86C15 /* Extensions */,
+			);
+			path = HypervisorCore;
+			sourceTree = "<group>";
+		};
+		630D9D9B27FD90F400B86C15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				630D9D9C27FD926400B86C15 /* URLRequest+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		630D9DA027FD927E00B86C15 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				630D9DA127FD928A00B86C15 /* HypervisorLogger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		630D9DA327FD929600B86C15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				630D9DA627FD92A600B86C15 /* HypervisorRoute.swift */,
+				630D9DA427FD92A600B86C15 /* HypervisorSharedMobilityAgency.swift */,
+				630D9DA827FD92A600B86C15 /* Location.swift */,
+				630D9DA927FD92A600B86C15 /* PublicTransportInfo.swift */,
+				630D9DA727FD92A600B86C15 /* RoutePart.swift */,
+				630D9DA527FD92A600B86C15 /* SharedMobilityInfo.swift */,
+				630D9DAB27FD92A600B86C15 /* Stop.swift */,
+				630D9DAA27FD92A600B86C15 /* TransferType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		630D9DB427FD92B100B86C15 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				630D9DB527FD92C500B86C15 /* DateUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		630D9DB727FD92CC00B86C15 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				630D9DB827FD92D800B86C15 /* Collection+Extensions.swift */,
+				630D9DB927FD92D800B86C15 /* Optional+Extensions.swift */,
+				630D9DBA27FD92D800B86C15 /* String+Extensions.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		655A747D3FE50BF628830C29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D3B213837222C51D3326663 /* Pods-TestHypervisorMapboxTwo.debug.xcconfig */,
+				257DCD3ED8620EE66516DFDD /* Pods-TestHypervisorMapboxTwo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E2DC3ABBA249202014E8574A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02F04CEB6207DA1A24118FCA /* Pods_TestHypervisorMapboxTwo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +533,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 630D9CF227FD8E1800B86C15 /* Build configuration list for PBXNativeTarget "TestHypervisorMapboxTwo" */;
 			buildPhases = (
+				EEC4DE0C56513D89DD63B527 /* [CP] Check Pods Manifest.lock */,
 				630D9CDA27FD8E1700B86C15 /* Sources */,
 				630D9CDB27FD8E1700B86C15 /* Frameworks */,
 				630D9CDC27FD8E1700B86C15 /* Resources */,
+				57604F225EF1F101B991A2D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +564,7 @@
 				};
 			};
 			buildConfigurationList = 630D9CD927FD8E1700B86C15 /* Build configuration list for PBXProject "TestHypervisorMapboxTwo" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -133,14 +594,145 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57604F225EF1F101B991A2D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestHypervisorMapboxTwo/Pods-TestHypervisorMapboxTwo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestHypervisorMapboxTwo/Pods-TestHypervisorMapboxTwo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestHypervisorMapboxTwo/Pods-TestHypervisorMapboxTwo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEC4DE0C56513D89DD63B527 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestHypervisorMapboxTwo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		630D9CDA27FD8E1700B86C15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630D9D5027FD8F5400B86C15 /* ETAResponseMessage.swift in Sources */,
+				630D9D2B27FD8F3100B86C15 /* UpdateLocationInteractionCommand.swift in Sources */,
+				630D9D2A27FD8F3100B86C15 /* StartTransferInteractionCommand.swift in Sources */,
+				630D9D7F27FD8FD700B86C15 /* CommandStates.swift in Sources */,
+				630D9DB227FD92A600B86C15 /* TransferType.swift in Sources */,
+				630D9DB127FD92A600B86C15 /* PublicTransportInfo.swift in Sources */,
+				630D9DC427FD983800B86C15 /* HypervisorWebSocketBaseURL.swift in Sources */,
+				630D9D4B27FD8F5400B86C15 /* DeviatedResponseMessage.swift in Sources */,
+				630D9D4627FD8F5400B86C15 /* InfeasibleResponseMessage.swift in Sources */,
+				630D9D1327FD8F1700B86C15 /* Trip.swift in Sources */,
+				630D9D6827FD8F7C00B86C15 /* TransferUpdateResponse.swift in Sources */,
+				630D9D7D27FD8FD700B86C15 /* MessageTypes.swift in Sources */,
+				630D9D2227FD8F3100B86C15 /* AlterRouteCommand.swift in Sources */,
+				630D9D4E27FD8F5400B86C15 /* DeviatedLocationMessage.swift in Sources */,
+				630D9D6227FD8F7C00B86C15 /* DeviationResponse.swift in Sources */,
+				630D9D4327FD8F5400B86C15 /* RouteArrivalDelayResponseMessage.swift in Sources */,
+				630D9DC227FD961D00B86C15 /* UserDefault.swift in Sources */,
+				630D9D7A27FD8FD700B86C15 /* InfeasibilityReasons.swift in Sources */,
+				630D9D1127FD8F1700B86C15 /* PublicTransportNotificationInfo.swift in Sources */,
+				630D9D4127FD8F5400B86C15 /* DepartureDelayResponseMessage.swift in Sources */,
+				630D9D4527FD8F5400B86C15 /* AlternativeRouteMessage.swift in Sources */,
+				630D9D6527FD8F7C00B86C15 /* AlternativesResponse.swift in Sources */,
+				630D9D9127FD906D00B86C15 /* GeometryType.swift in Sources */,
+				630D9D4A27FD8F5400B86C15 /* ArrivalDelayResponseMessage.swift in Sources */,
+				630D9D4D27FD8F5400B86C15 /* PartUpdateMessage.swift in Sources */,
+				630D9D7C27FD8FD700B86C15 /* HypervisorWebSocketEnvironment.swift in Sources */,
+				630D9DBF27FD95E700B86C15 /* Settings.swift in Sources */,
+				630D9D2827FD8F3100B86C15 /* StopInteractionCommand.swift in Sources */,
+				630D9D4F27FD8F5400B86C15 /* TransferUpdateResponseMessage.swift in Sources */,
+				630D9D9527FD907C00B86C15 /* HypervisorConverter.swift in Sources */,
+				630D9D4427FD8F5400B86C15 /* LocationMessage.swift in Sources */,
+				630D9D4227FD8F5400B86C15 /* ResponseMessage.swift in Sources */,
+				630D9D6327FD8F7C00B86C15 /* ETAResponse.swift in Sources */,
+				630D9D0027FD8EE800B86C15 /* CGPoint+Extensions.swift in Sources */,
+				630D9D2427FD8F3100B86C15 /* InitInteractionCommand.swift in Sources */,
+				630D9DBD27FD92D800B86C15 /* String+Extensions.swift in Sources */,
+				630D9CFA27FD8EBC00B86C15 /* HypervisorController.swift in Sources */,
 				630D9CE627FD8E1700B86C15 /* ViewController.swift in Sources */,
+				630D9CF927FD8EBC00B86C15 /* HypervisorDelegate.swift in Sources */,
+				630D9D9D27FD926400B86C15 /* URLRequest+Extensions.swift in Sources */,
+				630D9D1027FD8F1700B86C15 /* Error.swift in Sources */,
+				630D9D9327FD906D00B86C15 /* MapboxRouteBody.swift in Sources */,
+				630D9CFD27FD8ED000B86C15 /* HypervisorSocketManager.swift in Sources */,
+				630D9D2727FD8F3100B86C15 /* ConnectCommand.swift in Sources */,
+				630D9D5E27FD8F7C00B86C15 /* InfeasibleResponse.swift in Sources */,
+				630D9D2527FD8F3100B86C15 /* BaseCommand.swift in Sources */,
+				630D9D0E27FD8F1700B86C15 /* HypervisorOptions.swift in Sources */,
+				630D9D5F27FD8F7C00B86C15 /* ConnectResponse.swift in Sources */,
+				630D9DAE27FD92A600B86C15 /* HypervisorRoute.swift in Sources */,
+				630D9D1227FD8F1700B86C15 /* PublicTransportStopInfo.swift in Sources */,
+				630D9D6427FD8F7C00B86C15 /* CancellationResponse.swift in Sources */,
+				630D9D6F27FD8F9500B86C15 /* TransferUpdate.swift in Sources */,
+				630D9D4027FD8F5400B86C15 /* RouteInfoMessage.swift in Sources */,
+				630D9D2D27FD8F3100B86C15 /* ReconnectCommand.swift in Sources */,
+				630D9DAC27FD92A600B86C15 /* HypervisorSharedMobilityAgency.swift in Sources */,
+				630D9D4C27FD8F5400B86C15 /* BaseResponseMessage.swift in Sources */,
+				630D9DB327FD92A600B86C15 /* Stop.swift in Sources */,
+				630D9D0C27FD8F1700B86C15 /* Delay.swift in Sources */,
+				630D9D2627FD8F3100B86C15 /* StartInteractionCommand.swift in Sources */,
+				630D9D6627FD8F7C00B86C15 /* ArrivalDelayResponse.swift in Sources */,
+				630D9D7E27FD8FD700B86C15 /* EventTypes.swift in Sources */,
+				630D9D8027FD8FD700B86C15 /* PublicTransportStopTypes.swift in Sources */,
+				630D9D9F27FD927300B86C15 /* HypervisorCoreController.swift in Sources */,
+				630D9DAF27FD92A600B86C15 /* RoutePart.swift in Sources */,
+				630D9D2927FD8F3100B86C15 /* BaseInteractionCommand.swift in Sources */,
+				630D9D1427FD8F1700B86C15 /* Alternative.swift in Sources */,
+				630D9DBB27FD92D800B86C15 /* Collection+Extensions.swift in Sources */,
+				630D9D6727FD8F7C00B86C15 /* PublicTransportProgressResponse.swift in Sources */,
+				630D9D4927FD8F5400B86C15 /* BaseLocationMessage.swift in Sources */,
+				630D9D6E27FD8F9500B86C15 /* Update.swift in Sources */,
+				630D9D7B27FD8FD700B86C15 /* ZoneRadius.swift in Sources */,
+				630D9DAD27FD92A600B86C15 /* SharedMobilityInfo.swift in Sources */,
+				630D9D6127FD8F7C00B86C15 /* DepartureDelayResponse.swift in Sources */,
+				630D9D9927FD90B800B86C15 /* RouteConverterApiService.swift in Sources */,
+				630D9D7027FD8F9500B86C15 /* BaseUpdate.swift in Sources */,
+				630D9D6027FD8F7C00B86C15 /* BaseResponse.swift in Sources */,
+				630D9DB627FD92C500B86C15 /* DateUtil.swift in Sources */,
+				630D9D9727FD909E00B86C15 /* TransferType+Extensions.swift in Sources */,
+				630D9D4827FD8F5400B86C15 /* TransferUpdateMessage.swift in Sources */,
 				630D9CE227FD8E1700B86C15 /* AppDelegate.swift in Sources */,
+				630D9D6927FD8F7C00B86C15 /* RouteArrivalDelayResponse.swift in Sources */,
+				630D9D0F27FD8F1700B86C15 /* PluginConfig.swift in Sources */,
+				630D9D4727FD8F5400B86C15 /* CancellationResponseMessage.swift in Sources */,
+				630D9DA227FD928A00B86C15 /* HypervisorLogger.swift in Sources */,
+				630D9D9227FD906D00B86C15 /* MapboxConfig.swift in Sources */,
 				630D9CE427FD8E1700B86C15 /* SceneDelegate.swift in Sources */,
+				630D9D2327FD8F3100B86C15 /* StartPartInteractionCommand.swift in Sources */,
+				630D9DB027FD92A600B86C15 /* Location.swift in Sources */,
+				630D9D2C27FD8F3100B86C15 /* DeviationInteractionCommand.swift in Sources */,
+				630D9DBC27FD92D800B86C15 /* Optional+Extensions.swift in Sources */,
+				630D9D0D27FD8F1700B86C15 /* PublicTransportProgress.swift in Sources */,
+				630D9D8127FD8FD700B86C15 /* DelayTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +876,7 @@
 		};
 		630D9CF327FD8E1800B86C15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D3B213837222C51D3326663 /* Pods-TestHypervisorMapboxTwo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +905,7 @@
 		};
 		630D9CF427FD8E1800B86C15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 257DCD3ED8620EE66516DFDD /* Pods-TestHypervisorMapboxTwo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

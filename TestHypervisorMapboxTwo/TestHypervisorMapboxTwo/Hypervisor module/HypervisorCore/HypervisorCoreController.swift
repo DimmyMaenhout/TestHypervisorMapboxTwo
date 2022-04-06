@@ -1,9 +1,9 @@
 
 private let logTag = "HypervisorCore"
 
-internal func log(_ level: LogLevel, _ message: String) {
-    HypervisorCoreController.logger?.log(level, logTag, message)
-}
+//internal func log(_ level: LogLevel, _ message: String) {
+//    HypervisorCoreController.logger?.log(level, logTag, message)
+//}
 
 public class HypervisorCoreController {
     
