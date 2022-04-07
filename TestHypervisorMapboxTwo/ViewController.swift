@@ -57,6 +57,8 @@ class ViewController: UIViewController {
             print()
     
             startNavigationFromHypervisorRoute()
+            
+//            simulateRNRouteString()
         }
     
         // MARK: - Private methods
@@ -72,6 +74,22 @@ class ViewController: UIViewController {
     
             view.addSubview(navigationMapView)
         }
+    
+    // To simulate what we'll get back from React Native
+//    private func simulateRNRouteString() {
+//        convertHypervisorPartToMapboxRoute(routePartString: hrPart) { [weak self] tempRoute in
+//            guard let self = self else { return }
+//            guard let routeString = self.convertObjectToJsonString(object: tempRoute) else { return }
+//
+//            guard let routeObject: Route = self.convertJsonStringToMapboxRoute(jsonString: routeString) else {
+//                print("failed converting json string to Mapbox route")
+//                return
+//            }
+//
+//            print("Mapbox route distance: \(routeObject.distance)")
+//
+//        }
+//    }
     
     private func startNavigationFromHypervisorRoute() {
         convertHypervisorPartToMapboxRoute(routePartString: hrPart) { [weak self] route in
@@ -328,6 +346,33 @@ extension ViewController {
             return try JSONDecoder().decode(T.self, from: jsonData)
         } catch {
             print("method: convertJsonStringToObject, failed to decode jsonString to object, error: \(error)")
+            return nil
+        }
+    }
+    
+    private func convertJsonStringToMapboxRoute(jsonString: String) -> Route? {
+        do {
+            let data: Data = Data(jsonString.utf8)
+            let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            print("json: \(String(describing: json))")
+            let legs = json!["legs"] as? [Any]
+            let firstLeg = legs?.first as? [String: Any]
+            let source = firstLeg?["source"]  as? [String: Any]
+            let destination = firstLeg?["destination"]  as? [String: Any]
+            guard let sourceLocation = source?["location"] as? [Double], let destinationLocation = destination?["location"] as? [Double] else { return nil }
+            let coordinates: [[Double]] = [sourceLocation, destinationLocation]
+            let waypoints: [Waypoint] = coordinates.map({ coors in
+                Waypoint(coordinate: CLLocationCoordinate2D(latitude: coors[0], longitude: coors[1]))
+            })
+            let routeOptions = RouteOptions(waypoints: waypoints)
+            
+            let decoder = JSONDecoder()
+            decoder.userInfo[.options] = routeOptions
+            
+            let object = try? decoder.decode(Route.self, from: data)
+            return object
+        } catch {
+            print("convertJsonStringToObject, error: \(error)")
             return nil
         }
     }
