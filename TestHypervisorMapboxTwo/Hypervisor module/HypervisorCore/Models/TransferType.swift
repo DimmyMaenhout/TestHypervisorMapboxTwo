@@ -28,7 +28,7 @@
     scooter,
         
     sharedCar,
-    sharedBike,
+    sharedBike = "shared_bike",
     sharedMoped,
     sharedScooter
 }
