@@ -104,6 +104,7 @@
 		630D9DC227FD961D00B86C15 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DC127FD961D00B86C15 /* UserDefault.swift */; };
 		630D9DC427FD983800B86C15 /* HypervisorWebSocketBaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D9DC327FD983800B86C15 /* HypervisorWebSocketBaseURL.swift */; };
 		632D932327FD9F8900AA3AB6 /* HypervisorNavigationModuleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D932227FD9F8900AA3AB6 /* HypervisorNavigationModuleConfig.swift */; };
+		73CF8EF9280956FB00E57E4D /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CF8EF8280956FB00E57E4D /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -207,6 +208,7 @@
 		630D9DC127FD961D00B86C15 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		630D9DC327FD983800B86C15 /* HypervisorWebSocketBaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypervisorWebSocketBaseURL.swift; sourceTree = "<group>"; };
 		632D932227FD9F8900AA3AB6 /* HypervisorNavigationModuleConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypervisorNavigationModuleConfig.swift; sourceTree = "<group>"; };
+		73CF8EF8280956FB00E57E4D /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		9D3B213837222C51D3326663 /* Pods-TestHypervisorMapboxTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestHypervisorMapboxTwo.debug.xcconfig"; path = "Target Support Files/Pods-TestHypervisorMapboxTwo/Pods-TestHypervisorMapboxTwo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,6 +249,7 @@
 				630D9CE127FD8E1700B86C15 /* AppDelegate.swift */,
 				630D9CE327FD8E1700B86C15 /* SceneDelegate.swift */,
 				630D9CE527FD8E1700B86C15 /* ViewController.swift */,
+				73CF8EF8280956FB00E57E4D /* MockData.swift */,
 				630D9CE727FD8E1700B86C15 /* Main.storyboard */,
 				630D9CEA27FD8E1800B86C15 /* Assets.xcassets */,
 				630D9CEC27FD8E1800B86C15 /* LaunchScreen.storyboard */,
@@ -671,6 +674,7 @@
 				630D9D4A27FD8F5400B86C15 /* ArrivalDelayResponseMessage.swift in Sources */,
 				630D9D4D27FD8F5400B86C15 /* PartUpdateMessage.swift in Sources */,
 				630D9D7C27FD8FD700B86C15 /* HypervisorWebSocketEnvironment.swift in Sources */,
+				73CF8EF9280956FB00E57E4D /* MockData.swift in Sources */,
 				630D9DBF27FD95E700B86C15 /* Settings.swift in Sources */,
 				630D9D2827FD8F3100B86C15 /* StopInteractionCommand.swift in Sources */,
 				630D9D4F27FD8F5400B86C15 /* TransferUpdateResponseMessage.swift in Sources */,
@@ -886,7 +890,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QSK66EYT9M;
+				DEVELOPMENT_TEAM = FAJTRUZ6J9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestHypervisorMapboxTwo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -899,7 +903,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dmaenhout.TestHypervisorMapboxTwo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icapps.mygateway.debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
